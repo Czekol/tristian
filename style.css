@@ -2,7 +2,6 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	
 }
 
 body {
@@ -26,16 +25,16 @@ a {
 	overflow: hidden;
 }
 .card__img {
-	min-height: 400px;
-	max-height: 500px;
+	height: 400px;
 	width: 100%;
+
 	background-size: cover;
 	-o-object-fit: cover;
 	object-fit: cover;
 }
 
 .card__title {
-  color: #333333;
+	color: #333333;
 }
 
 .card__title::before {
@@ -65,4 +64,28 @@ a {
 .card__btn--highlighted {
 	background-color: #003b67;
 	color: #dddddd;
-} /*# sourceMappingURL=style.css.map */
+}
+
+.first-poem {
+margin-bottom: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 350px) {
+	.card__img {
+		height: 300px;
+	}
+	.card__btns {
+		
+		margin-top: 10px;
+	}
+	.card__text {
+		margin: 10px 0;
+	}
+
+	.first-poem {
+		margin-bottom: 8px;
+		}
+
+}
+
+/*# sourceMappingURL=style.css.map */
